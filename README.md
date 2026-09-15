@@ -1,7 +1,6 @@
 # yt-archive
 
-A modernized YouTube livestream archiving tool written in python that fixes the original [`ytarchive`](https://github.com/Kethsar/ytarchive) by replacing its frozen binary engine with the actively maintained [`yt-dlp`](https://github.com/yt-dlp/yt-dlp) pipeline, enabling archival of current YouTube live streams that would otherwise fail due to YouTube's evolving anti-bot challenges.
-
+A modernized YouTube livestream archiving tool written in python that fixes the original [`ytarchive`](https://github.com/Kethsar/ytarchive)
 ## Problem Solved
 
 The original `ytarchive.exe` (v0.5.0, built January 2025) communicates directly with YouTube's innertube API to download DASH fragments. However, it was built before YouTube's current security requirements and **cannot solve the `nsig` challenge**. As a result, it no longer archives properly -- even with a manually supplied `poToken`, streams typically fail with HTTP 403 errors or unreachable URLs.
