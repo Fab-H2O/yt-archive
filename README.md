@@ -114,11 +114,9 @@ Run `archive.py --help` for the full list of options. Any unrecognized option is
 * [**ffmpeg** and **ffprobe**](https://www.ffmpeg.org) - Required for [merging separate video and audio files](#format-selection), as well as for various [post-processing](#post-processing-options) tasks. License [depends on the build](https://www.ffmpeg.org/legal.html)
     **Important**: What you need is ffmpeg *binary*, **NOT** [the Python package of the same name](https://pypi.org/project/ffmpeg)
 * A JavaScript runtime/engine like [**deno**](https://deno.land)  
+* yt-dlp is required [**yt-dlp.exe**]([https://github.com/yt-dlp/yt-dlp0](https://github.com/yt-dlp/yt-dlp)
+### Required
 
-### Required (Bundled)
-
-| Dependency | Version | Purpose |
-|---|---|---|
 | **Python** | 3.10+ | Required to run `archive.py` (must be added to PATH) |
 
 
