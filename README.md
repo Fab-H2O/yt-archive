@@ -17,7 +17,8 @@ This project rewires the ytarchive front-end onto the yt-dlp engine, which nativ
 
 ## How It Works
 
-Create a Root folder with both **`archive.py`** and **`run-ytarchive.bat`**, you can also add yt-dlp.exe and deno.exe in that folder. Create a subfolder named **`ffmpeg`** and put the : 7z.dll / ffmpeg.exe / ffplay.exe / ffprobe.exe in it.
+Create a Root folder with both **`archive.py`** and **`run-ytarchive.bat`**, you MUST add yt-dlp.exe and deno.exe in that folder. Create a subfolder named (the sub-folder already exist (not the files) if you download the release version) **`ffmpeg`** and put the : 7z.dll / ffmpeg.exe / ffplay.exe / ffprobe.exe in it.
+**Please download them from the original source. Link at the bottom.**
 
 
 ```
