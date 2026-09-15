@@ -147,6 +147,19 @@ The original project (https://github.com/Kethsar/ytarchive) is located in the `y
 2. Some low-level ytarchive flags (file/dir permissions, save-state, fragment file handling) have no yt-dlp equivalent and are intentionally not translated.
 3. This project targets Windows -- the `run-ytarchive.bat` wrapper and all binaries are `.exe` files.
 
+
+## Legacy Mode
+
+If you download the original ytarchive.exe you can fallback to it. This was done for testing purpose.
+
+The `--legacy-ytarchive` flag invokes the original `ytarchive.exe` binary. This is **not recommended** because:
+
+- It is a frozen binary that does not solve YouTube's `nsig` challenge
+- It will likely fail with HTTP 403 or unreachable URL errors
+- It requires a manually provided `--potoken` that is generally insufficient
+
+Use this only if you have a working `poToken` and accept that archival may still fail.
+
 ## License
 
 This project is a modification of the original [ytarchive](https://github.com/Kethsar/ytarchive) project.
